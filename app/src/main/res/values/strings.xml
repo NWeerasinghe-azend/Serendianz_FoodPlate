@@ -47,4 +47,14 @@
     <string name="chk_box">check box</string>
     <string name="txt_agreement">I agree to  Privacy Policy</string>
     <string name="btn_join">Join with us</string>
+    <string name="txtUserEmail">Email</string>
+    <string name="txtUserPassword">your password</string>
+    <string name="topicLogin">Sign in as a customer</string>
+    <string name="siginInBtn">Sign In</string>
+    <string name="dob">Birthday</string>
+    <string name="successLogin">Yo have logged in succesfuly</string>
+    <string name="signInmesage">Please chose the relavant category</string>
+    <string name="cusSignIn">Sign inas a customer</string>
+    <string name="foodSignIn">Sign in as a Food Admin</string>
+    <string name="signIDeli">Sign in as Delivery person</string>
 </resources>

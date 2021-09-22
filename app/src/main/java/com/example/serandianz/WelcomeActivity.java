@@ -27,4 +27,9 @@ public class WelcomeActivity extends AppCompatActivity {
 
         startActivity(new Intent(WelcomeActivity.this,RegistrationActivity.class));
     }
+
+    public void loginMain(View view) {
+
+        startActivity(new Intent(WelcomeActivity.this,MainLoginActivity.class));
+    }
 }
