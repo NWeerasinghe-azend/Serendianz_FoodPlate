@@ -9,7 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Serandianz">
-        <activity android:name=".RegistrationActivity"></activity>
+        <activity
+            android:name=".GetCard_DetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Card_DetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Payment_MethodActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="true" />
+        <activity android:name=".RegistrationActivity" />
         <activity android:name=".CustomerRegistrationActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".WelcomeActivity">
@@ -22,7 +34,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Serandianz.NoActionBar"></activity>
+            android:theme="@style/Theme.Serandianz.NoActionBar" />
 
         <meta-data
             android:name="preloaded_fonts"
