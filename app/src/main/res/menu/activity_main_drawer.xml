@@ -5,16 +5,33 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/homeMain"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="@string/homeMain" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/myProfile"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            android:title="@string/myProfile" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/Ratings"
+            android:icon="@drawable/ic_baseline_star_rate_24"
+            android:title="@string/Ratings" />
+<!--        <item-->
+<!--            android:id="@+id/foodCategory"-->
+<!--            android:icon="@drawable/ic_baseline_fastfood_24"-->
+<!--            android:title="Food Categories" />-->
+<!--        <item-->
+<!--            android:id="@+id/addTocart"-->
+<!--            android:icon="@drawable/ic_baseline_add_shopping_cart_24"-->
+<!--            android:title="@string/AddToCart" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/foodDelivery"-->
+<!--            android:icon="@drawable/ic_baseline_directions_bike_24"-->
+<!--            android:title="@string/food_delivery" />-->
+<!--        <item-->
+<!--            android:id="@+id/payment"-->
+<!--            android:icon="@drawable/ic_baseline_account_balance_wallet_24"-->
+<!--            android:title="@string/payment" />-->
     </group>
 </menu>
