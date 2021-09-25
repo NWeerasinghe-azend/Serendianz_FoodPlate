@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imagetwo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="1dp"
@@ -35,7 +35,7 @@
         android:text="@string/welcomereg"
         android:textColor="#DFB981"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/welcomereg" />
 
     <Button
-        android:id="@+id/cusRegBtn"
+        android:id="@+id/cusSignIn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -71,24 +71,24 @@
         app:layout_constraintTop_toBottomOf="@+id/appname" />
 
     <Button
-        android:id="@+id/FoodregBtn"
+        android:id="@+id/foodSignIn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="72dp"
         android:text="@string/FoodregBtn"
-        app:layout_constraintBottom_toTopOf="@+id/delRegBtn"
+        app:layout_constraintBottom_toTopOf="@+id/sinIDelivery"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/delRegBtn"
+        android:id="@+id/sinIDelivery"
         android:layout_width="287dp"
         android:layout_height="54dp"
         android:layout_marginBottom="132dp"
         android:text="@string/delRegBtn"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />

@@ -105,9 +105,24 @@
     <string name="txtLocation">Location</string>
     <string name="dater">When do you want the order</string>
     <string name="dateTime">Date and Time</string>
-    <string name="placeOrder">Place My Order</string>
+    <!--    <string name="placeOrder">Place My Order</string>-->
     <string name="showOrder">View my order</string>
     <string name="htr">Add To Cart</string>
     <string name="or1">Hela Bojun.....</string>
     <string name="or2">Ikman.....</string>
+    <string name="btnView">View my Order</string>
+    <string name="UpdateOrder">Update my order</string>
+    <string name="deleteOrder">Remove My Order</string>
+    <string name="ViewOrdert">View my order</string>
+    <string name="updateOrderBtn">update my order</string>
+    <string name="placeOrder">Place My Order</string>
+    <string name="ViewMyOrder">View My Order</string>
+    <string name="updateName" />
+    <string name="editadress" />
+    <string name="editDob" />
+    <string name="editNic" />
+    <string name="editEmail" />
+    <string name="editUserName" />
+    <string name="myUpdateBtn">Update My profile</string>
+    <string name="updaBtn">Update my order</string>
 </resources>
