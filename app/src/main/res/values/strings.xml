@@ -85,4 +85,13 @@
     <string name="view_button">"VIEW "</string>
     <string name="save_button">SAVE</string>
     <string name="try_btn">TRY</string>
+
+    <string name="homeMain">homeMain</string>
+    <string name="myProfile">myProfile</string>
+    <string name="Ratings">Ratings</string>
+    <string name="foodSignIn">foodSignIn</string>
+    <string name="sinIDelivery">Sign as Dlivery</string>
+    <string name="siginInmessge">signInmessage</string>
+    <string name="Username">Enter Your Card Username</string>
+    <string name="enter_uname">Enter your Card Name</string>
 </resources>

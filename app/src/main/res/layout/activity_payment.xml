@@ -135,8 +135,8 @@
         android:textSize="27sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintEnd_toStartOf="@+id/price"
+        app:layout_constraintHorizontal_bias="0.31"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/check_details"
         app:layout_constraintVertical_bias="0.0" />
@@ -153,18 +153,18 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintEnd_toStartOf="@+id/amount"
+        app:layout_constraintHorizontal_bias="0.637"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328"
+        app:layout_constraintVertical_bias="0.315"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/price"
-        android:layout_width="102dp"
-        android:layout_height="49dp"
-        android:layout_marginEnd="88dp"
+        android:layout_width="83dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="112dp"
         android:background="#F15353"
         android:ems="10"
         android:fontFamily="sans-serif-black"
@@ -175,7 +175,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.312" />
+        app:layout_constraintVertical_bias="0.317" />
 
     <EditText
         android:id="@+id/delivery_charges"
@@ -223,14 +223,14 @@
         android:id="@+id/amount"
         android:layout_width="76dp"
         android:layout_height="51dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="36dp"
         android:background="#CCC2C2"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315"
+        app:layout_constraintVertical_bias="0.316"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText

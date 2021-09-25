@@ -1,49 +1,52 @@
 package com.example.serandianz;
 
 public class CardDetails {
-    private Integer CardNo;
-    private Integer ExpYear;
-    private Integer ExpMonth;
-    private Integer Cvv;
+    private Integer  cardNo;
+    private Integer  expYear;
+    private Integer  expMonth;
+    private Integer  CVC;
+    private String cardName;
 
-    public CardDetails() {}
-
-    public CardDetails(Integer cardNo, Integer expYear, Integer expMonth, Integer cvv) {
-        CardNo = cardNo;
-        ExpYear = expYear;
-        ExpMonth = expMonth;
-        Cvv = cvv;
+    public CardDetails() {       //create empty constructors
     }
 
-    public Integer getCardNo() {
-        return CardNo;
+    public Integer getCardNo() {     //Generate getters and setters
+        return cardNo;
     }
 
     public void setCardNo(Integer cardNo) {
-        CardNo = cardNo;
+        this.cardNo = cardNo;
     }
 
     public Integer getExpYear() {
-        return ExpYear;
+        return expYear;
     }
 
     public void setExpYear(Integer expYear) {
-        ExpYear = expYear;
+        this.expYear = expYear;
     }
 
     public Integer getExpMonth() {
-        return ExpMonth;
+        return expMonth;
     }
 
     public void setExpMonth(Integer expMonth) {
-        ExpMonth = expMonth;
+        this.expMonth = expMonth;
     }
 
-    public Integer getCvv() {
-        return Cvv;
+    public Integer getCVC() {
+        return CVC;
     }
 
-    public void setCvv(Integer cvv) {
-        Cvv = cvv;
+    public void setCVC(Integer CVC) {
+        this.CVC = CVC;
+    }
+
+    public String getCardName() {
+        return cardName;
+    }
+
+    public void setCardName(String cardName) {
+        this.cardName = cardName;
     }
 }

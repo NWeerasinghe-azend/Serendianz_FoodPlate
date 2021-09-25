@@ -14,7 +14,7 @@
             android:title="@string/myProfile" />
         <item
             android:id="@+id/Ratings"
-            android:icon="@drawable/ic_baseline_star_rate_24"
+
             android:title="@string/Ratings" />
 <!--        <item-->
 <!--            android:id="@+id/foodCategory"-->
