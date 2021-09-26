@@ -35,25 +35,21 @@ public class Card_DetailsActivity extends AppCompatActivity {
     Button save, view;
     CardDetails cardObj;
     DatabaseReference dbRef;
-
+    String USERNAME;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_details);
 
-                                                              //Declared variables connected with their xml IDs
-        cardname=findViewById(R.id.Username);
+        cardname=findViewById(R.id.Username);                    //Declared variables connected with their xml IDs
         card_no = findViewById(R.id.card_num);
         exp_year = findViewById(R.id.exp_year);
         exp_month = findViewById(R.id.exp_month);
         ccv = findViewById(R.id.ccv_no);
         save = findViewById(R.id.save_button);
         view = findViewById(R.id.view_button);
-
-
         cardObj = new CardDetails();
-
     }
     public void clearControls(){          //When data saved,clear all entered data
         card_no.setText(" ");
@@ -70,10 +66,43 @@ public class Card_DetailsActivity extends AppCompatActivity {
         String ExpiryYear=exp_year.getText().toString();
         String ExpiryMonth=exp_month.getText().toString();
         String CardCCV=ccv.getText().toString();
-        String cardNAME=cardname.getText().toString();
+        USERNAME=cardname.getText().toString();
 
+        //Test Cases
+        if(TextUtils.isEmpty(CardNumber)){
+            Toast.makeText(this,"Enter Your Card Number",Toast.LENGTH_SHORT).show();
+            return;
+        }
 
+        if(CardNumber.length()>16){
+            Toast.makeText(this,"You have entered more than 16 digits, please check your card number",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(ExpiryYear.length()>2){
+            Toast.makeText(this,"You have entered more than 16 digits, please check your card number",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(ExpiryMonth.length()>2){
+            Toast.makeText(this,"You have entered more than 16 digits, please check your card number",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(CardCCV.length()>3){
+            Toast.makeText(this,"You have entered more than 16 digits, please check your card number",Toast.LENGTH_SHORT).show();
+            return;
+        }
 
+        if(TextUtils.isEmpty(ExpiryYear)){
+            Toast.makeText(this,"Enter Your Card Expiry Year",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(TextUtils.isEmpty(ExpiryMonth)){
+            Toast.makeText(this,"Enter Your Card Expiry Month",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(TextUtils.isEmpty(CardCCV)){
+            Toast.makeText(this,"Enter Your Card CCV Number",Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         dbRef = FirebaseDatabase.getInstance().getReference().child("CardDetails");
         try {
@@ -94,7 +123,7 @@ public class Card_DetailsActivity extends AppCompatActivity {
                 cardObj.setCVC(Integer.parseInt(ccv.getText().toString().trim()));
                 cardObj.setCardName(cardname.getText().toString().trim());
 
-                dbRef.child(cardNAME).setValue(cardObj);
+                dbRef.child(USERNAME).setValue(cardObj);
 
                 Toast.makeText(getApplicationContext(), "Your Card Details is Being Stored Successfully", Toast.LENGTH_SHORT).show();
                 clearControls();
@@ -105,32 +134,34 @@ public class Card_DetailsActivity extends AppCompatActivity {
         }
 
     }
-    public void ShowData(View view) {              //Retrieve data from data
-
-        String cardNAME=cardname.getText().toString();
+    public void Show(View view) {              //Retrieve data from data
 
 
-        dbRef = FirebaseDatabase.getInstance().getReference().child("CardDetails").child(cardNAME);
-        dbRef.addListenerForSingleValueEvent(new ValueEventListener(){
-            public void onDataChange(DataSnapshot dataSnapshot){
-                if(dataSnapshot.hasChildren()){
-                    card_no.setText(dataSnapshot.child("cardNo").getValue().toString());
-                    exp_year.setText(dataSnapshot.child("expYear").getValue().toString());
-                   exp_month.setText(dataSnapshot.child("expMonth").getValue().toString());
-                    ccv.setText(dataSnapshot.child("CVC").getValue().toString());
-                    cardname.setText(dataSnapshot.child("cardName").getValue().toString());
-                }else {
-                    Toast.makeText(getApplicationContext(), "No Data To Display", Toast.LENGTH_SHORT).show();
-                }
-
-            }
-            public void onCancelled(DatabaseError databaseError){
-
-            }
-        });
+   DatabaseReference  readRef = FirebaseDatabase.getInstance().getReference().child("CardDetails").child(USERNAME);
+   readRef.addListenerForSingleValueEvent(new ValueEventListener() {
+       @Override
+       public void onDataChange(@NonNull DataSnapshot snapshot) {
+           if(snapshot.hasChildren()){
+               card_no.setText(snapshot.child("cardNo").getValue().toString());
+               exp_year.setText(snapshot.child("expYear").getValue().toString());
+               exp_month.setText(snapshot.child("expMonth").getValue().toString());
+               ccv.setText(snapshot.child("CVC").getValue().toString());
+               cardname.setText(snapshot.child("cardName").getValue().toString());
+           }else {
+               Toast.makeText(getApplicationContext(), "No Data To Display", Toast.LENGTH_SHORT).show();
+           }
+           }
 
 
-    }
+       @Override
+       public void onCancelled(@NonNull DatabaseError error) {
+
+       }
+    });
+
+
+}
+
 
 }
 

@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.109" />
 
     <TextView
-        android:id="@+id/pay"
+        android:id="@+id/Pay_data"
         android:layout_width="329dp"
         android:layout_height="54dp"
         android:layout_marginStart="10dp"
@@ -68,7 +68,7 @@
         android:onClick="customerRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pay" />
+        app:layout_constraintTop_toBottomOf="@+id/Pay_data" />
 
     <Button
         android:id="@+id/FoodregBtn"
@@ -98,7 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:onClick="PaymentActivity"
+        android:onClick="AddPaymentActivity"
         android:text="@string/try_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

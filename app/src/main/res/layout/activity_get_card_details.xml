@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pay"
+        app:layout_constraintTop_toBottomOf="@+id/Pay_data"
         app:layout_constraintVertical_bias="0.284"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -50,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pay"
+        app:layout_constraintTop_toBottomOf="@+id/Pay_data"
         app:layout_constraintVertical_bias="0.284"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -102,7 +102,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pay"
+        app:layout_constraintTop_toBottomOf="@+id/Pay_data"
         app:layout_constraintVertical_bias="0.284"
         tools:ignore="SpeakableTextPresentCheck" />
 

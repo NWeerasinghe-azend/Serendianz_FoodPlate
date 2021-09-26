@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/pay"
+        android:id="@+id/Pay_data"
         android:layout_width="338dp"
         android:layout_height="62dp"
         android:layout_marginStart="10dp"
@@ -41,7 +41,7 @@
     <EditText
         android:id="@+id/plain_bg"
         android:layout_width="371dp"
-        android:layout_height="496dp"
+        android:layout_height="525dp"
         android:background="#070606"
         android:ems="10"
         android:inputType="textPersonName"
@@ -50,14 +50,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pay"
+        app:layout_constraintTop_toBottomOf="@+id/Pay_data"
         app:layout_constraintVertical_bias="0.276"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/plain_bg2"
-        android:layout_width="351dp"
-        android:layout_height="478dp"
+        android:layout_width="355dp"
+        android:layout_height="504dp"
         android:background="#F15353"
         android:ems="10"
         android:inputType="textPersonName"
@@ -65,7 +65,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pay"
+        app:layout_constraintTop_toBottomOf="@+id/Pay_data"
         app:layout_constraintVertical_bias="0.284"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -87,142 +87,45 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/sub_total"
-        android:layout_width="130dp"
-        android:layout_height="54dp"
-        android:background="#F15353"
-        android:ems="10"
-        android:fontFamily="sans-serif-black"
-        android:inputType="textPersonName"
-        android:text="@string/sub_total"
-        android:textSize="27sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
-
-    <EditText
-        android:id="@+id/total"
-        android:layout_width="130dp"
-        android:layout_height="54dp"
-        android:background="#F15353"
-        android:ems="10"
-        android:fontFamily="sans-serif-black"
-        android:inputType="textPersonName"
-        android:text="@string/total"
-        android:textSize="27sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.621" />
-
-    <EditText
-        android:id="@+id/food_id"
-        android:layout_width="92dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="83dp"
-        android:background="#F15353"
-        android:ems="10"
-        android:fontFamily="sans-serif-black"
-        android:inputType="textPersonName"
-        android:text="@string/food_id"
-        android:textSize="27sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/price"
-        app:layout_constraintHorizontal_bias="0.31"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/check_details"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/foodId"
-        android:layout_width="84dp"
-        android:layout_height="50dp"
-        android:background="#CCC2C2"
-        android:ems="10"
-        android:fontFamily="sans-serif-black"
-        android:inputType="textPersonName"
-        android:text="@string/foodId"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/amount"
-        app:layout_constraintHorizontal_bias="0.637"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <EditText
         android:id="@+id/price"
-        android:layout_width="83dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="112dp"
+        android:layout_width="98dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="268dp"
         android:background="#F15353"
         android:ems="10"
         android:fontFamily="sans-serif-black"
         android:inputType="textPersonName"
         android:text="@string/price"
-        android:textSize="27sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317" />
+        app:layout_constraintVertical_bias="0.327"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/delivery_charges"
-        android:layout_width="119dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="44dp"
-        android:background="#CCC2C2"
+        android:id="@+id/quan_tv"
+        android:layout_width="144dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="216dp"
+        android:background="#F15353"
         android:ems="10"
-        android:inputType="number"
+        android:fontFamily="sans-serif-black"
+        android:inputType="textPersonName"
+        android:text="@string/quan_tv"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.513"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        app:layout_constraintVertical_bias="0.421"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/total_amount"
-        android:layout_width="135dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="40dp"
-        android:background="#CCC2C2"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.614"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <EditText
-        android:id="@+id/subTotal"
-        android:layout_width="119dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="44dp"
-        android:background="#CCC2C2"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.416"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <EditText
-        android:id="@+id/amount"
-        android:layout_width="76dp"
-        android:layout_height="51dp"
+        android:id="@+id/delivery_cost"
+        android:layout_width="127dp"
+        android:layout_height="37dp"
         android:layout_marginEnd="36dp"
         android:background="#CCC2C2"
         android:ems="10"
@@ -230,42 +133,156 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintVertical_bias="0.628"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/total_amount"
+        android:layout_width="137dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="36dp"
+        android:background="#CCC2C2"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/subTotal"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:background="#CCC2C2"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/FoodPrice"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="48dp"
+        android:background="#CCC2C2"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/qty"
+        android:layout_width="133dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="44dp"
+        android:background="#CCC2C2"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/delivery"
-        android:layout_width="210dp"
-        android:layout_height="45dp"
+        android:layout_width="187dp"
+        android:layout_height="47dp"
         android:background="#F15353"
         android:ems="10"
         android:fontFamily="sans-serif-black"
         android:inputType="textPersonName"
         android:text="@string/delivery"
-        android:textSize="27sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.507"
+        app:layout_constraintVertical_bias="0.622"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/confirm_btn"
-        android:layout_width="177dp"
-        android:layout_height="71dp"
+        android:layout_width="154dp"
+        android:layout_height="58dp"
         android:backgroundTint="#0E1F51"
         android:clickable="true"
         android:onClick="Payment_MethodActivity"
         android:text="@string/confirm_btn"
+        android:textColor="#D8C8C8"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.772" />
+        app:layout_constraintVertical_bias="0.83" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="136dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#0E1F51"
+        android:clickable="true"
+        android:onClick="AddPaymentActivity"
+        android:text="@string/back_btn"
+        android:textColor="#D8C8C8"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <Button
+        android:id="@+id/SUB"
+        android:layout_width="165dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#F15353"
+        android:clickable="true"
+        android:fontFamily="sans-serif-black"
+        android:onClick="Payment_MethodActivity"
+        android:text="@string/SUB"
+        android:textColor="#0E0E0E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <Button
+        android:id="@+id/TOTAL"
+        android:layout_width="159dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#F15353"
+        android:clickable="false"
+        android:fontFamily="sans-serif-black"
+        android:onClick="Payment_MethodActivity"
+        android:text="@string/TOTAL"
+        android:textColor="#0E0E0E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

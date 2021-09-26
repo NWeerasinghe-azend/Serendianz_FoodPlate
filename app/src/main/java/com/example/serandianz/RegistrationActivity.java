@@ -22,8 +22,8 @@ public class RegistrationActivity extends AppCompatActivity {
     public void customerRegister(View view) {
         startActivity(new Intent(RegistrationActivity.this,CustomerRegistrationActivity.class));
     }
-    public void PaymentActivity(View view){
-        Intent intent=new Intent(this,PaymentActivity.class);
+    public void AddPaymentActivity(View view){
+        Intent intent=new Intent(this,AddPaymentActivity.class);
         startActivity(intent);
     }
 }

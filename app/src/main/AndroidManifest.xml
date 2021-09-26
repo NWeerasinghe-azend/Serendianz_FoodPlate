@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.serandianz">
+    package="com.example.serandianz" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Serandianz">
+        android:theme="@style/Theme.Serandianz" >
+        <activity
+            android:name=".AddPaymentActivity"
+            android:exported="true" />
         <activity
             android:name=".GetCard_DetailsActivity"
             android:exported="true" />
@@ -24,7 +27,7 @@
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".CustomerRegistrationActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".WelcomeActivity">
+        <activity android:name=".WelcomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

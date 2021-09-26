@@ -94,4 +94,20 @@
     <string name="siginInmessge">signInmessage</string>
     <string name="Username">Enter Your Card Username</string>
     <string name="enter_uname">Enter your Card Name</string>
+    <string name="Pay_data">Payment Data</string>
+    <string name="food_tv">Enter Food Id</string>
+    <string name="price_tv">Enter Price of a Food</string>
+    <string name="qty_tv">Quantity</string>
+    <string name="Food_Id" />
+    <string name="food_price" />
+    <string name="et_toast">Your Bill Is In Process</string>
+    <string name="delivery_tv">Delivery Charges</string>
+    <string name="submit">SUBMIT</string>
+    <string name="add">Sub Total</string>
+    <string name="SUB">Sub Total</string>
+    <string name="TOTAL">TOTAL</string>
+    <string name="submit_pay">SUBMIT</string>
+    <string name="del_tv">Delivery Charges</string>
+    <string name="quan_tv">Quantity</string>
+    <string name="back_btn">BACK</string>
 </resources>
