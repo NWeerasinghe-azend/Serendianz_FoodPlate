@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pending_orders"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F1C84E"
+    android:elevation="6dp"
+    app:cardBackgroundColor="#AF9444"
+    app:cardCornerRadius="6dp"
+    app:cardUseCompatPadding="true"
+    tools:context=".PendingDeliveryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFA716"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imlauncher1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/orderid1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imlauncher1"
+            android:text="Order id"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/foodid1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderid1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imlauncher1"
+            android:text="Food code"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/amount1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foodid1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imlauncher1"
+            android:text="Amount"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
