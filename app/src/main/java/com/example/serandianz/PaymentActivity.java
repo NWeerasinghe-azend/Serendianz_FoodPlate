@@ -15,12 +15,6 @@ public class PaymentActivity extends AppCompatActivity {
     EditText Delivery;
     TextView SubTotal;
     TextView Total;
-    String number1;
-    String number2;
-    String number3;
-    int n1;
-    int n2;
-    int n3;
 
 
     @Override
