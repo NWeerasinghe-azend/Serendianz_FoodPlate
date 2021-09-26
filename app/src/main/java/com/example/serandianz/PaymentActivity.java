@@ -16,6 +16,7 @@ public class PaymentActivity extends AppCompatActivity {
     TextView SubTotal;
     TextView Total;
     TextView n2;
+    TextView n3;
 
 
     @Override
