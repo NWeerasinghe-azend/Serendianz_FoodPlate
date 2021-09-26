@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Ser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCC343"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/formView"
+        android:layout_width="373dp"
+        android:layout_height="590dp"
+        android:background="#EDDC89"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/female"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <ImageView
+        android:id="@+id/fooddelivery_image"
+        android:layout_width="378dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="?android:attr/spotShadowAlpha"
+        app:layout_constraintEnd_toEndOf="@+id/female"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deliveryOfficer_name"
+        app:srcCompat="@drawable/fodeliv" />
+
+    <TextView
+        android:id="@+id/registrationheader"
+        android:layout_width="276dp"
+        android:layout_height="57dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/registrationheader"
+        android:text="Delivery Officer Registration"
+        android:textColor="#393737"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formView" />
+
+    <TextView
+        android:id="@+id/deliveryOfficer_name"
+        android:layout_width="69dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/deliveryOfficer_name"
+        android:text="Name :"
+        android:textColor="#151515"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationheader"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/deliveryOfficer_nic"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:hint="@string/deliveryOfficer_nic"
+        android:text="NIC :"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/deliveryOffice_pno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/deliveryOfficer_name"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <TextView
+        android:id="@+id/deliveryOffice_pno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="18dp"
+        android:hint="@string/deliveryOffice_pno"
+        android:text="Phone No :"
+        android:textColor="#151414"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/formView"
+        app:layout_constraintEnd_toStartOf="@+id/phone_no"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fooddelivery_image"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <TextView
+        android:id="@+id/deliveryOfficeremp_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:hint="@string/deliveryOfficeremp_id"
+        android:text="Emp Id :"
+        android:textColor="#171616"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/emp_id"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deliveryOffice_pno" />
+
+    <TextView
+        android:id="@+id/deliveryOfficer_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="23dp"
+        android:hint="@string/deliveryOfficer_gender"
+        android:text="Gender :"
+        android:textColor="#131313"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_no" />
+
+    <TextView
+        android:id="@+id/deliveryOfficer_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/deliveryOfficer_email"
+        android:text="Email :"
+        android:textColor="#171616"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/deliveryOfficer_Uname"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deliveryOfficeremp_id"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <TextView
+        android:id="@+id/deliveryOfiicer_password"
+        android:layout_width="74dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/deliveryOfiicer_password"
+        android:text="Password :"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fooddelivery_image"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/deliveryOfficer_Uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:hint="@string/deliveryOfficer_Uname"
+        android:text="User Name :"
+        android:textColor="#090909"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/deliveryOfiicer_password"
+        app:layout_constraintEnd_toStartOf="@+id/userName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/confirmation"
+        android:layout_width="350dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/confirmation"
+        android:text="I confirms that the information I have provided is true."
+        app:layout_constraintBottom_toTopOf="@+id/signUp_button"
+        app:layout_constraintEnd_toEndOf="@+id/formView"
+        app:layout_constraintTop_toBottomOf="@+id/formView"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <Button
+        android:id="@+id/signUp_button"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="52dp"
+        android:hint="@string/signUp_button"
+        android:onClick="signup"
+        android:text="SIGN-UP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password1"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toEndOf="@+id/deliveryOfiicer_password" />
+
+    <TextView
+        android:id="@+id/account_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/account_login"
+        android:linksClickable="true"
+        android:onClick="login"
+        android:text="Already have an account?Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signUp_button"
+        app:layout_constraintVertical_bias="0.675" />
+
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="73dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:hint="@string/male"
+        android:text="Male"
+        app:layout_constraintBottom_toTopOf="@+id/female"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/female"
+        android:layout_width="113dp"
+        android:layout_height="34dp"
+        android:hint="@string/female"
+        android:text="Female"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toEndOf="@+id/deliveryOfficer_gender"
+        app:layout_constraintTop_toBottomOf="@+id/deliveryOfficer_gender"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="197dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="96dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        app:layout_constraintBaseline_toBaselineOf="@+id/deliveryOfficer_name"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/phone_no"
+        android:layout_width="196dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/phone_no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/emp_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.811" />
+
+    <EditText
+        android:id="@+id/nic"
+        android:layout_width="196dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/nic"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/emp_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.219" />
+
+    <EditText
+        android:id="@+id/emp_id"
+        android:layout_width="109dp"
+        android:layout_height="31dp"
+        android:background="#FFFCFC"
+        android:ems="10"
+        android:hint="@string/emp_id"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/deliveryOfficeremp_id"
+        app:layout_constraintEnd_toStartOf="@+id/deliveryOfficer_gender"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/deliveryOfficeremp_id"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="153dp"
+        android:layout_height="31dp"
+        android:background="#FDFDFD"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emp_id"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="196dp"
+        android:layout_height="31dp"
+        android:background="#FFFDFD"
+        android:ems="10"
+        android:hint="@string/userName"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/deliveryOfiicer_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/deliveryOfficer_Uname"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/jointoSell_button"
+        android:layout_width="186dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="3dp"
+        android:background="#EBCA1C"
+        android:hint="@string/jointoSell_button"
+        android:text="Join to Sell"
+        app:layout_constraintBottom_toTopOf="@+id/registrationheader"
+        app:layout_constraintEnd_toStartOf="@+id/ver_line"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/jointobuy_button"
+        android:layout_width="186dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:background="#EBCA1C"
+        android:text="Join to Buy"
+        app:layout_constraintBottom_toTopOf="@+id/registrationheader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ver_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/hor_line"
+        android:layout_width="409dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="22dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/formView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jointoSell_button" />
+
+    <View
+        android:id="@+id/ver_line"
+        android:layout_width="2dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="630dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/jointobuy_button"
+        app:layout_constraintStart_toEndOf="@+id/jointobuy_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/gender_button"
+        android:layout_width="116dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/formView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toEndOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/male"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="196dp"
+        android:layout_height="31dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/password11"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/fooddelivery_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toEndOf="@+id/deliveryOfiicer_password"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_constraintVertical_bias="0.612" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
