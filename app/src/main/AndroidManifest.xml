@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Serandianz" >
         <activity
-            android:name=".AddPaymentActivity"
-            android:exported="true" />
-        <activity
             android:name=".GetCard_DetailsActivity"
             android:exported="true" />
         <activity
