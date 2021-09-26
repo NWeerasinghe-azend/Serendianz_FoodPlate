@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#4C0D0D"
+    tools:context=".ViewOrder1Activity">
+
+    <ImageView
+        android:id="@+id/imageone"
+        android:layout_width="410dp"
+        android:layout_height="244dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/background_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imagetwo"
+        android:layout_width="409dp"
+        android:layout_height="492dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/background_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/aluwa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/wt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="639dp"
+        android:fontFamily="sans-serif"
+        android:linksClickable="false"
+        android:text="@string/wt_msg"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#201202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_app_name"
+        android:layout_width="212dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="608dp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/txt_app_name"
+        android:textColor="#5C3103"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wt_msg"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/he3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="568dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/msgjk"
+        android:textColor="#5C0909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/he5"
+        android:layout_width="179dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="144dp"
+        android:background="#535541"
+        android:backgroundTint="#A1634F"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/hr"
+        android:textColor="#320202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/he6"
+        android:layout_width="72dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/ikhj"
+        android:textColor="#500303"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <TextView
+        android:id="@+id/foodId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aladin"
+        android:text="@string/foodId"
+        android:textColor="#220901"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <EditText
+        android:id="@+id/txtFoodid"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:fontFamily="@font/aladin"
+        android:hint="@string/foodnamet"
+        android:inputType="textPersonName"
+        android:textColorHint="#B63F3F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <TextView
+        android:id="@+id/foodCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/foodCat"
+        android:textColor="#220901"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451" />
+
+    <EditText
+        android:id="@+id/txtFoodcat"
+        android:layout_width="247dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="308dp"
+        android:ems="10"
+        android:fontFamily="@font/aladin"
+        android:hint="@string/foodCat"
+        android:inputType="textPersonName"
+        android:textColorHint="#B63F3F"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="252dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/updatequntity"
+        android:textColor="#220901"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <EditText
+        android:id="@+id/txtFoodName"
+        android:layout_width="241dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="320dp"
+        android:ems="10"
+        android:fontFamily="@font/aladin"
+        android:hint="@string/tctFoodname"
+        android:inputType="textPersonName"
+        android:textColorHint="#B63F3F"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <EditText
+        android:id="@+id/txtQuantity"
+        android:layout_width="238dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:fontFamily="@font/aladin"
+        android:hint="@string/updatequntity"
+        android:inputType="textPersonName"
+        android:textColorHint="#B63F3F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="121dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/updatequntity"
+        android:textColor="#220901"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageone"
+        app:layout_constraintVertical_bias="0.593" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="468dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/txtLocation"
+        android:textColor="#220901"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="@+id/imagetwo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtLocation"
+        android:layout_width="233dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="464dp"
+        android:ems="10"
+        android:fontFamily="@font/aladin"
+        android:hint="@string/txtLocation"
+        android:inputType="textPersonName"
+        android:textColorHint="#B63F3F"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/helabojun"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:fontFamily="@font/aladin"
+        android:inputType="date"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788" />
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="89dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/dategty"
+        android:textColor="#220901"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.798" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#C814E6"
+        android:backgroundTint="#6CDBEA"
+        android:fontFamily="@font/amarante"
+        android:onClick="viewOrder"
+        android:text="@string/iewoderbtn"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <Button
+        android:id="@+id/updateOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="#7DD319"
+        android:fontFamily="@font/anton"
+        android:onClick="updateOrder"
+        android:text="@string/btnoupdate"
+        android:textColor="#C60A4A"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:backgroundTint="#DC0C0C"
+        android:fontFamily="@font/anton"
+        android:onClick="deleteOrder"
+        android:text="@string/btnDeleteorder"
+        android:textColor="#F3ECEC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <TextView
+        android:id="@+id/selectedFoodId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aladin"
+        android:text="@string/foodnamet"
+        android:textColor="#220901"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageone"
+        app:layout_constraintVertical_bias="0.384" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

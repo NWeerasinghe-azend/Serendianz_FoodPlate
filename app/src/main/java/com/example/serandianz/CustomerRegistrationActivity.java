@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,7 +29,8 @@ public class CustomerRegistrationActivity extends AppCompatActivity {
     DatabaseReference dbRef;
     Customer custOb;
     private FirebaseAuth auth;
-//    String  emailPattern= "/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$/";
+     String  emailPattern= "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+             + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,71 @@ public class CustomerRegistrationActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
         custOb = new Customer();
+
+
+
+    }
+    //email validation
+    private Boolean validateEmail(){
+        String entredEmail = PT_email.getText().toString();
+        if(!entredEmail.matches(emailPattern)){
+
+            PT_email.setError("You entered a wrong email");
+            return false;
+
+        }else{
+            PT_email.setError(null);
+            return true;
+        }
+
+    }
+    //validate phone number
+    private Boolean validateEPhone(){
+        String entredPhone = PT_phone_no.getText().toString();
+        if(entredPhone.length()!=10){
+
+            PT_phone_no.setError("You have entered a wrong phone number");
+            return false;
+
+        }else{
+            PT_phone_no.setError(null);
+            return true;
+        }
+
+    }
+    //validate nic
+    private Boolean validateNic(){
+        String entredNic = PT_nic.getText().toString();
+        if((entredNic.length()!=10) || (entredNic.length()!=12)) {
+
+            PT_nic.setError("You have entered a wrong number");
+            return false;
+
+
+        }else{
+            PT_nic.setError(null);
+            return true;
+        }
+
+    }
+
+    //validate password
+    private Boolean validatePassword(){
+        String enteredPasword = Pwd_first.getText().toString();
+        String passwordPattern = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$";
+
+
+
+        if(!enteredPasword.matches(passwordPattern)){
+
+            Pwd_first.setError("Please provide password with specialcharacers , letters and atleast 6 digits long");
+            return false;
+
+        }else{
+            Pwd_first.setError(null);
+            return true;
+        }
+
     }
 
     private void clearControls() {
@@ -67,6 +134,11 @@ public class CustomerRegistrationActivity extends AppCompatActivity {
 
     public void createStudent(View view) {
 
+// validating required inputs
+        if (!validateEmail()| !validateEPhone() |!validatePassword()){
+            return;
+        }
+
         dbRef = FirebaseDatabase.getInstance().getReference().child("Customer");
 
         String email= PT_email.getText().toString();
@@ -85,10 +157,11 @@ public class CustomerRegistrationActivity extends AppCompatActivity {
 
             }else if(TextUtils.isEmpty(PT_nic.getText().toString())) {
                 Toast.makeText(getApplicationContext(), "Please enter your name", Toast.LENGTH_SHORT).show();
-            }else if((PT_nic.length() < 10) ||(PT_nic.length() <12) ) {
-                Toast.makeText(getApplicationContext(), "Please enter a nic with length 10 or 12", Toast.LENGTH_SHORT).show();
+
             }else if(TextUtils.isEmpty(PT_email.getText().toString())) {
-                Toast.makeText(getApplicationContext(), "Please enter your name", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Please enter your email", Toast.LENGTH_SHORT).show();
+
+
             }else if(TextUtils.isEmpty(PT_uname.getText().toString())) {
                 Toast.makeText(getApplicationContext(), "Please enter your name", Toast.LENGTH_SHORT).show();
             }else if(TextUtils.isEmpty(Pwd_first.getText().toString())) {

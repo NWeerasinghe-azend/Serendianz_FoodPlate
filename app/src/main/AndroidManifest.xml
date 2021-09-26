@@ -11,12 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Serandianz">
-        <activity android:name=".OrderUpdatingActivity"></activity>
+        <activity android:name=".RatingsActivity"></activity>
+        <activity android:name=".OrderUpdatingActivity" />
         <activity android:name=".ProfileUpdatingActivity" />
         <activity android:name=".AddToCartTActivity" />
         <activity android:name=".UpdateOrderActivity" />
         <activity android:name=".ViewOrder1Activity" />
-        <activity android:name=".AddToCartActivity" />
         <activity android:name=".UpdateProfileActivity" />
         <activity android:name=".ForgetPasswordActivity" />
         <activity android:name=".ProfileActivity" />

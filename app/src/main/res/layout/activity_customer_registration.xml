@@ -322,21 +322,21 @@
         android:ems="10"
 
         android:fontFamily="@font/amarante"
-        android:hint="@string/dob"
+        android:hint="@string/regDob"
         android:inputType="date"
         android:textColor="#120501"
         android:textColorHint="#35302E"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/PT_nic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintHorizontal_bias="0.252"
         app:layout_constraintStart_toEndOf="@+id/txt_dob"
         app:layout_constraintTop_toBottomOf="@+id/PT_address" />
 
     <EditText
         android:id="@+id/PT_nic"
-        android:layout_width="181dp"
-        android:layout_height="39dp"
+        android:layout_width="182dp"
+        android:layout_height="40dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="282dp"
@@ -357,7 +357,7 @@
     <EditText
         android:id="@+id/PT_phone_no"
         android:layout_width="191dp"
-        android:layout_height="33dp"
+        android:layout_height="34dp"
         android:layout_marginStart="38dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="50dp"
@@ -436,7 +436,7 @@
 
     <EditText
         android:id="@+id/pwd_conf"
-        android:layout_width="186dp"
+        android:layout_width="179dp"
         android:layout_height="36dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="5dp"
@@ -451,7 +451,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toEndOf="@+id/txt_conf_pwd"
         app:layout_constraintTop_toBottomOf="@+id/Pwd_first" />
 
@@ -469,7 +469,7 @@
         android:text="Join with us"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chk_box2"
         app:layout_constraintVertical_bias="0.0" />

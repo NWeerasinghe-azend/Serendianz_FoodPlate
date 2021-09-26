@@ -92,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/amarante"
-        android:text="@string/homeMain"
+        android:text="@string/homeManily"
         android:textColor="#E3AE11"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

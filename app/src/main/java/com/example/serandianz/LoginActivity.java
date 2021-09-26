@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Please enter your name", Toast.LENGTH_SHORT).show();}
 
          auth.signInWithEmailAndPassword(email,password)
-
+                 //identifying the relavant user
                  .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                      @Override
                      public void onComplete(@NonNull @NotNull Task<AuthResult> task) {

@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeMain"
         android:name="com.example.serandianz.ui.home.HomeFragment"
-        android:label="@string/homeMain"
+        android:label="@string/appname"
         tools:layout="@layout/fragment_home" />
 
     <fragment
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/Ratings"
         android:name="com.example.serandianz.ui.slideshow.RatingsFragment"
-        android:label="@string/Ratings"
+        android:label="@string/headRatings"
         tools:layout="@layout/fragment_slideshow" />
 
 </navigation>

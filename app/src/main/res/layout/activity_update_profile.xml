@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageone"
+        android:layout_width="417dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/background_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <ImageView
+        android:id="@+id/imagethree"
+        android:layout_width="417dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/background_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/imagetwo"
+        android:layout_width="412dp"
+        android:layout_height="528dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/background_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/side_nav_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/wt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="639dp"
+        android:fontFamily="sans-serif"
+        android:linksClickable="false"
+        android:text="@string/wt_msg"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#201202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/txt_app_name"
+        android:layout_width="339dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="608dp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/txt_app_name"
+        android:textColor="#5C3103"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wt_msg"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <TextView
+        android:id="@+id/htr"
+        android:layout_width="177dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/amarante"
+        android:text="@string/ftyA"
+        android:textColor="#550505"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <Button
+        android:id="@+id/or1"
+        android:layout_width="214dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#7FE10D"
+        android:fontFamily="@font/lobster"
+        android:onClick="helaBojunOrder"
+        android:text="@string/HelabOjutxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <Button
+        android:id="@+id/or2"
+        android:layout_width="197dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#7FE10D"
+        android:fontFamily="@font/lobster"
+        android:text="@string/tct"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/VieFoods"
+        android:layout_width="194dp"
+        android:layout_height="63dp"
+        android:backgroundTint="#A911C3"
+        android:text="@string/Viewfoody"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFoodView"
+        android:layout_width="173dp"
+        android:layout_height="31dp"
+        android:fontFamily="@font/lobster"
+        android:text="View today menu"
+        android:textColor="#8F0606"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <Button
+        android:id="@+id/ratings"
+        android:layout_width="158dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="ratings"
+        android:text="Rate us"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="@font/amarante"
+        android:text="Rate us"
+        android:textColor="#500808"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetwo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

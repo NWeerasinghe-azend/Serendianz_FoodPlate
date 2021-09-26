@@ -10,7 +10,7 @@
         android:id="@+id/imagetwo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:foreground="@drawable/background_design"
+
         android:scaleType="centerCrop"
         android:src="@drawable/welcome"
         app:layout_constraintBottom_toBottomOf="parent"
