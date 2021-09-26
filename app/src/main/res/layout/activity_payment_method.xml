@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment_MethodActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nuha3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/paymethod"
+        android:layout_width="337dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="640dp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/paymethod"
+        android:textAlignment="center"
+        android:textColor="#0E0D0C"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/plain_bg"
+        android:layout_width="374dp"
+        android:layout_height="517dp"
+        android:layout_marginTop="5dp"
+        android:background="#070606"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/plain_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="352dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/background_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nuhaone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573" />
+
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="339dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="524dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/choose"
+        android:textAlignment="center"
+        android:textColor="#0E0D0C"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/card_bg"
+        android:layout_width="303dp"
+        android:layout_height="130dp"
+        android:background="#FFD68A"
+        android:clickable="true"
+        android:text="@string/card_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407" />
+
+    <EditText
+        android:id="@+id/plain_bg4"
+        android:layout_width="198dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="5dp"
+        android:background="#070606"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/plain_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/cash_bg"
+        android:layout_width="285dp"
+        android:layout_height="131dp"
+        android:background="#FFD68A"
+        android:text="@string/cash_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
+    <EditText
+        android:id="@+id/plain_bg3"
+        android:layout_width="178dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="5dp"
+        android:background="#070606"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/plain_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/cash_payment"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:background="@drawable/background_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nuha3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="76dp"
+        android:layout_height="70dp"
+        android:background="@drawable/background_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nuha3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <TextView
+        android:id="@+id/card_payment"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="376dp"
+        android:background="#FFD68A"
+        android:clickable="true"
+        android:fontFamily="@font/acme"
+        android:onClick="Card_DetailsActivity"
+        android:text="@string/card_payment"
+        android:textAlignment="center"
+        android:textColor="#0E0D0C"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cashPayment"
+        android:layout_width="156dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="180dp"
+        android:background="#FFD68A"
+        android:clickable="true"
+        android:fontFamily="@font/acme"
+
+        android:text="@string/cashPayment"
+        android:textAlignment="center"
+        android:textColor="#0E0D0C"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
