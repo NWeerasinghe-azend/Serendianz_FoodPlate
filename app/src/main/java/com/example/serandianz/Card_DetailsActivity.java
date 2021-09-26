@@ -74,20 +74,20 @@ public class Card_DetailsActivity extends AppCompatActivity {
             return;
         }
 
-        if(CardNumber.length()>16){
-            Toast.makeText(this,"You have entered more than 16 digits, please check your card number",Toast.LENGTH_SHORT).show();
+        if(CardNumber.length()>14){
+            Toast.makeText(this,"You have entered more than 14 digits, please check your card number",Toast.LENGTH_SHORT).show();
             return;
         }
         if(ExpiryYear.length()>2){
-            Toast.makeText(this,"You have entered more than 16 digits, please check your card number",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"You have entered more than 2 digits, please check your card expiry year",Toast.LENGTH_SHORT).show();
             return;
         }
         if(ExpiryMonth.length()>2){
-            Toast.makeText(this,"You have entered more than 16 digits, please check your card number",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"You have entered more than 2 digits, please check your card expiry month",Toast.LENGTH_SHORT).show();
             return;
         }
         if(CardCCV.length()>3){
-            Toast.makeText(this,"You have entered more than 16 digits, please check your card number",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"You have entered more than 3 digits, please check your card CVC number",Toast.LENGTH_SHORT).show();
             return;
         }
 
