@@ -42,8 +42,5 @@ public class PaymentActivity extends AppCompatActivity {
         Intent intent=new Intent(this,Payment_MethodActivity.class);
         startActivity(intent);
     }
-    public void AddPaymentActivity(View view){
-        Intent intent=new Intent(this,AddPaymentActivity.class);
-        startActivity(intent);
-    }
+
 }

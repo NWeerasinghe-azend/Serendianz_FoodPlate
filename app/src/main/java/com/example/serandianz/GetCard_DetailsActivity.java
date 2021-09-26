@@ -1,5 +1,6 @@
 package com.example.serandianz;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
@@ -11,11 +12,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 public class GetCard_DetailsActivity extends AppCompatActivity {
 
     private Button button;
     Dialog dialog;
-
+    CardDetails cardObj;
+    DatabaseReference dbRef;
+    String USERNAME;
 
     EditText card_no;
     EditText exp_year;
@@ -64,6 +73,10 @@ public class GetCard_DetailsActivity extends AppCompatActivity {
         exp_year=findViewById(R.id.exp_year);
         exp_month=findViewById(R.id.exp_month);
         ccv=findViewById(R.id.ccv_no);
+                                          //Declared variables connected with their xml IDs
+
+
+        cardObj = new CardDetails();
 
         Intent intent=getIntent();
 
@@ -87,5 +100,65 @@ public class GetCard_DetailsActivity extends AppCompatActivity {
     public void Card_DetailsActivity(View view){
         Intent intent=new Intent(this,Card_DetailsActivity.class);
         startActivity(intent);
+    }
+
+    public void Update(View view){
+        DatabaseReference updateRef = FirebaseDatabase.getInstance().getReference().child("CardDetails").child(USERNAME);
+        updateRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.hasChild(USERNAME)){
+                try {
+                    cardObj.setCardNo(Integer.parseInt(card_no.getText().toString().trim()));
+                    cardObj.setExpMonth(Integer.parseInt(exp_year.getText().toString().trim()));
+                    cardObj.setExpMonth(Integer.parseInt(exp_month.getText().toString().trim()));
+                    cardObj.setCVC(Integer.parseInt(ccv.getText().toString().trim()));
+
+                    dbRef = FirebaseDatabase.getInstance().getReference().child("CardDetails").child(USERNAME);
+                    dbRef.setValue(USERNAME);
+
+                    //Feedback for the user
+                    Toast.makeText(getApplicationContext(), "Your Card Details is Being Updated Successfully", Toast.LENGTH_SHORT).show();
+
+                }catch(NumberFormatException e){
+                    Toast.makeText(getApplicationContext(), "Invalid data", Toast.LENGTH_SHORT).show();
+
+                }
+                }else{
+                Toast.makeText(getApplicationContext(), "No Data to Update", Toast.LENGTH_SHORT).show();
+
+                }
+            }
+
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    public void Delete(View View){          // Deleting saved data
+        DatabaseReference deleteRef = FirebaseDatabase.getInstance().getReference().child("CardDetails").child(USERNAME);
+        deleteRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.hasChild(USERNAME)){
+                    dbRef=FirebaseDatabase.getInstance().getReference().child("CardDetails").child(USERNAME);
+                    dbRef.removeValue();
+                    Toast.makeText(getApplicationContext(), "Data Deleted Successfully", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "No Data to Delete", Toast.LENGTH_SHORT).show();
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
     }
 }

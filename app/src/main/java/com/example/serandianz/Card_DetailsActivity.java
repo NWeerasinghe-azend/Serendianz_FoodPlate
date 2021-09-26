@@ -140,7 +140,7 @@ public class Card_DetailsActivity extends AppCompatActivity {
    DatabaseReference  readRef = FirebaseDatabase.getInstance().getReference().child("CardDetails").child(USERNAME);
    readRef.addListenerForSingleValueEvent(new ValueEventListener() {
        @Override
-       public void onDataChange(@NonNull DataSnapshot snapshot) {
+       public void onDataChange(@NonNull DataSnapshot snapshot) {      //getting values from db
            if(snapshot.hasChildren()){
                card_no.setText(snapshot.child("cardNo").getValue().toString());
                exp_year.setText(snapshot.child("expYear").getValue().toString());
@@ -148,19 +148,57 @@ public class Card_DetailsActivity extends AppCompatActivity {
                ccv.setText(snapshot.child("CVC").getValue().toString());
                cardname.setText(snapshot.child("cardName").getValue().toString());
            }else {
-               Toast.makeText(getApplicationContext(), "No Data To Display", Toast.LENGTH_SHORT).show();
+               Toast.makeText(getApplicationContext(), "No Data To Display", Toast.LENGTH_SHORT).show();// No data available
            }
            }
 
 
        @Override
-       public void onCancelled(@NonNull DatabaseError error) {
+       public void onCancelled(@NonNull DatabaseError error) {    //code error
 
        }
     });
 
 
 }
+    public void GetCard_DetailsActivity(View view){
+        Intent intent=new Intent(this,GetCard_DetailsActivity.class);
+
+        String num1=card_no.getText().toString();
+        String num2=exp_year.getText().toString();
+        String num3=exp_month.getText().toString();
+        String num4=ccv.getText().toString();
+
+        if(TextUtils.isEmpty(num1)){
+            Toast.makeText(this,"Enter Your Card Number",Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if(num1.length()>16){
+            Toast.makeText(this,"You have entered more than 16 digits, please check your card number",Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if(TextUtils.isEmpty(num2)){
+            Toast.makeText(this,"Enter Your Card Expiry Year",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(TextUtils.isEmpty(num3)){
+            Toast.makeText(this,"Enter Your Card Expiry Month",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(TextUtils.isEmpty(num4)){
+            Toast.makeText(this,"Enter Your Card CCV Number",Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        intent.putExtra("n1",num1);
+        intent.putExtra("n2",num2);
+        intent.putExtra("n3",num3);
+        intent.putExtra("n4",num4);
+
+        startActivity(intent);
+    }
 
 
 }

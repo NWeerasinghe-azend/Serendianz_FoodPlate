@@ -91,16 +91,16 @@
 
     <EditText
         android:id="@+id/plain_bg6"
-        android:layout_width="344dp"
-        android:layout_height="553dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="360dp"
+        android:layout_height="551dp"
+        android:layout_marginBottom="24dp"
         android:background="#FFAE1A"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/plain_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Pay_data"
         app:layout_constraintVertical_bias="0.284"
@@ -258,15 +258,32 @@
         android:layout_height="68dp"
         android:backgroundTint="#D34B20"
         android:clickable="true"
-        android:onClick="Card_DetailsActivity"
+        android:onClick="Update"
         android:text="@string/change"
+        android:textColor="#F3ECEC"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
+        app:layout_constraintVertical_bias="0.719" />
+
+    <Button
+        android:id="@+id/complete_delete"
+        android:layout_width="251dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#D34B20"
+        android:clickable="true"
+        android:onClick="Delete"
+        android:text="@string/complete_delete"
+        android:textColor="#F1E8E8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
 
     <Button
         android:id="@+id/confirm_d"
@@ -280,9 +297,9 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.92" />
+        app:layout_constraintVertical_bias="0.825" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

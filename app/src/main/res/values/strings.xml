@@ -110,4 +110,5 @@
     <string name="del_tv">Delivery Charges</string>
     <string name="quan_tv">Quantity</string>
     <string name="back_btn">BACK</string>
+    <string name="complete_delete">DELETE ALL</string>
 </resources>
