@@ -18,7 +18,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 class FoodRVAdapter extends RecyclerView.Adapter<FoodRVAdapter.ViewHolder> {
-
+//adapter
     int lastPos = -1;
     private ArrayList<FoodRVModel> foodRVModelArrayList;
     private Context context;

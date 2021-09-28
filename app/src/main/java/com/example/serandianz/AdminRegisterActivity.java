@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class AdminRegisterActivity extends AppCompatActivity {
 
-
+//admin register
     private TextInputEditText userNameEdt1, passwordEdt1, confirmPwdEdt1;
     private TextView loginTV1;
     private Button registerBtn1;
