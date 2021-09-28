@@ -1,3 +1,4 @@
+/*
 package com.example.serandianz.ui.gallery;
 
 import android.os.Bundle;
@@ -28,19 +29,20 @@ public class GalleryFragment extends Fragment {
         binding = FragmentGalleryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
-    }
+        */
+/*final TextView textView = binding.textGallery;
+        //galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+            //@Override
+            //public void onChanged(@Nullable String s) {
+                //textView.setText(s);
+            //}
+        //});
+        //return root;
+   }
 
     @Override
     public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
+        //.onDestroyView();
+        //binding = null;
     }
-}
+}*/

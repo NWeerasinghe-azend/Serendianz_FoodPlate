@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Serandianz">
+        <activity android:name=".MainActivity2"></activity>
+        <activity android:name=".EditFoodActivity" />
+        <activity android:name=".AdminRegisterActivity" />
+        <activity android:name=".AdminLoginActivity" />
+        <activity android:name=".AddFoodActivity" />
         <activity
             android:name=".GetCard_DetailsActivity"
             android:exported="true" />

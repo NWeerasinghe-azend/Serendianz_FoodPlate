@@ -31,8 +31,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        txtUserEmail= findViewById(R.id.txtUserEmail);
-        txtUserPassword= findViewById(R.id.txtUserPassword);
+       // txtUserEmail= findViewById(R.id.txtUserEmail);
+        //txtUserPassword= findViewById(R.id.txtUserPassword);
         auth = FirebaseAuth.getInstance();
     }
 
@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                          if(task.isSuccessful()){
                              Toast.makeText(getApplicationContext(), "Login Successful!", Toast.LENGTH_SHORT).show();
 
-                             startActivity(new Intent(LoginActivity.this,MainHomeActivity.class));
+                             startActivity(new Intent(LoginActivity.this,MainActivity.class));
                          }else{
                              Toast.makeText(getApplicationContext(), "Opps!Error" +task.getException(), Toast.LENGTH_SHORT).show();
                          }
