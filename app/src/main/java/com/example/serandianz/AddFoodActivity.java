@@ -26,7 +26,7 @@ public class AddFoodActivity extends AppCompatActivity {
     private ProgressBar loadingPB;
     private Button addFoodBtn;
     private String foodID;
-
+//addfooditem
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

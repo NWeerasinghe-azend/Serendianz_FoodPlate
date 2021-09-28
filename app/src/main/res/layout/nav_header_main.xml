@@ -17,25 +17,24 @@
         android:layout_width="134dp"
         android:layout_height="98dp"
         android:contentDescription="@string/nav_header_desc"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@drawable/user" />
+        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+    <!--app:srcCompat="@drawable/user"-->
 
-    <TextView
-        android:layout_width="105dp"
-        android:layout_height="20dp"
-        android:fontFamily="@font/aladin"
-        android:layout_marginLeft="200dp"
-        android:text="Main Menu....."
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/black"
-        android:textSize="18dp" />
+<TextView
+    android:layout_width="105dp"
+    android:layout_height="20dp"
+    android:fontFamily="@font/aladin"
+    android:layout_marginLeft="200dp"
+    android:text="Main Menu....."
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    android:textColor="@color/black"
+    android:textSize="18dp" />
 
-    <TextView
-        android:id="@+id/agreement"
-        android:layout_width="247dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lobster"
-        android:text="@string/serandianz_food_plate"
-        android:textColor="@color/black"
-        android:textSize="25dp" />
+<TextView
+    android:id="@+id/agreement"
+    android:layout_width="247dp"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/lobster"
+    android:textColor="@color/black"
+    android:textSize="25dp" />
 </LinearLayout>

@@ -7,7 +7,7 @@
     android:alpha="0.8"
     android:background="@drawable/back1"
     tools:context=".AddFoodActivity">
-
+<!--kdk-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 
 public class AdminLoginActivity extends AppCompatActivity {
-//admin login
+//admin login1
 
     private TextInputEditText userNameEdt1, passwordEdt1;
     private TextView registerTV1;

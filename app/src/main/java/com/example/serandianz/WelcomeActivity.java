@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 
 public class WelcomeActivity extends AppCompatActivity {
 
+    private Button  regBt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,17 @@ public class WelcomeActivity extends AppCompatActivity {
 
 
         setContentView(R.layout.activity_welcome);
+        regBt  =findViewById(R.id.regBt);
+
+
+        regBt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(WelcomeActivity.this,AdminRegisterActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
     }
 
     public void register(View view) {

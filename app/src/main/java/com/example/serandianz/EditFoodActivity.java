@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class EditFoodActivity extends AppCompatActivity {
-//edit
+//edit1
     private TextInputEditText foodNameEdt,  foodPriceEdt,  foodImgEdt, foodLinkEdt , foodDescEdt;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;

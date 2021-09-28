@@ -5,7 +5,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class FoodRVModel implements Parcelable   {
-//rv model
+//rv model1
 
     private String foodName;
     private String foodPrice;
